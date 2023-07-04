@@ -1,0 +1,90 @@
+.sec1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.dark.sec1 {
+  background-color: hsl(232, 19%, 15%);
+}
+.light.sec1 {
+  background-color: hsl(225, 100%, 98%);
+}
+.sec1 h1 {
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+.sec1 span {
+  font-size: 14px;
+}
+.dark.sec1 h1 {
+  color: hsl(0, 0%, 100%);
+}
+.light.sec1 h1 {
+  color: hsl(230, 17%, 14%);
+}
+.dark.sec1 span {
+  color: hsl(228, 34%, 66%);
+}
+.light.sec1 span {
+  color: hsl(228, 12%, 44%);
+}
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  height: 22px;
+  width: 45px;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+.circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.dark .switch {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.light .switch {
+  background: hsl(230, 22%, 74%);
+}
+.dark .circle {
+  background-color: hsl(232, 19%, 15%);
+  margin: 3px 3px;
+}
+.light .circle {
+  background-color: hsl(225, 100%, 98%);
+  margin: 3px 26px;
+}
+.switch:hover {
+  cursor: pointer;
+}
+.light .switch:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+@media (max-width: 700px) {
+  .sec1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec1 h1 {
+    font-size: 22px;
+  }
+  .sec1 div:first-of-type {
+    margin-bottom: 15px;
+  }
+  .themeSwitcher {
+    width: calc(100vw - 60px);
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid hsl(228, 34%, 66%);
+  }
+  .sec1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

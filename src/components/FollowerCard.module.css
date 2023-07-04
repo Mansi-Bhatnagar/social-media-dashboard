@@ -1,0 +1,96 @@
+.body {
+  width: 275px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  position: relative;
+}
+.dark.body {
+  background-color: hsl(228, 28%, 20%);
+}
+.light.body {
+  background-color: hsl(227, 47%, 96%);
+}
+.sec1 {
+  display: flex;
+}
+.sec1 img {
+  padding-right: 8px;
+}
+.sec1 span {
+  font-size: 12px;
+}
+.dark .sec1 span {
+  color: hsl(228, 34%, 66%);
+}
+.light .sec1 span {
+  color: hsl(228, 12%, 44%);
+}
+.sec2 h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.dark .sec2 h1 {
+  color: hsl(0, 0%, 100%);
+}
+.light .sec2 h1 {
+  color: hsl(230, 17%, 14%);
+}
+.sec2 span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.dark .sec2 span {
+  color: hsl(228, 34%, 66%);
+}
+.light .sec2 span {
+  color: hsl(228, 12%, 44%);
+}
+.sec3 span {
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.borderGradient {
+  background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  height: 4px;
+  width: 275px;
+  position: absolute;
+  top: 0px;
+  border-radius: 8px 8px 0 0;
+}
+.body:hover {
+  cursor: pointer;
+}
+.dark.body:hover {
+  background-color: hsl(229, 23%, 32%);
+}
+.light.body:hover {
+  background-color: hsl(232, 33%, 91%);
+}
+
+@media (max-width: 1350px) {
+  .body {
+    margin: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .body {
+    width: 315px;
+    margin: 15px 0;
+  }
+  .borderGradient {
+    width: 315px;
+  }
+}
+@media (max-width: 400px) {
+  .borderGradient {
+    width: inherit;
+  }
+}

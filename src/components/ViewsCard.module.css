@@ -1,0 +1,65 @@
+.card {
+  width: 275px;
+  height: 135px;
+  margin-top: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark.card {
+  background-color: hsl(228, 28%, 20%);
+}
+.light.card {
+  background-color: hsl(227, 47%, 96%);
+}
+.sec1,
+.sec2 {
+  width: 235px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec1 span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.dark .sec1 span {
+  color: hsl(228, 34%, 66%);
+}
+.light .sec1 span {
+  color: hsl(228, 12%, 44%);
+}
+.sec2 h2 {
+  font-size: 30px;
+}
+.sec2 span {
+  padding-left: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.light .sec2 h2 {
+  color: hsl(230, 17%, 14%);
+}
+.red {
+  color: hsl(356, 69%, 56%);
+}
+.green {
+  color: hsl(163, 72%, 41%);
+}
+.card:hover {
+  cursor: pointer;
+}
+.dark.card:hover {
+  background-color: hsl(229, 23%, 32%);
+}
+.light.card:hover {
+  background-color: hsl(232, 33%, 91%);
+}
+@media (max-width: 700px) {
+  .card {
+    width: 315px;
+  }
+}
